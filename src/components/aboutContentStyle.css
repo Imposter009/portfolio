@@ -6,7 +6,7 @@
 
  section {
      padding: 8rem 0;
-     background: rgb(146, 126, 101);
+     background: rgb(190, 171, 155);
      transition: all 500ms ease;
  }
 
@@ -67,6 +67,11 @@
 
  .card.about-card h5 {
      margin: 1rem 0;
+ }
+
+ .about-cards h5,
+ small {
+     color: black;
  }
 
  .about-right h2 {

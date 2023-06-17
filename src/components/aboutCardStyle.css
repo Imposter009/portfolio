@@ -1,18 +1,17 @@
 .card {
     background: #fff;
     padding: 1.5rem;
+    color: rgb(22, 14, 14);
     border: 2px solid transparent;
     border-radius: 1.5rem;
     transition:all 500ms ease ;
 }
-
 .card:hover {
     background: white;
     border-color: #fff;
     transform: translateY(-0.5rem)
-
-
 }
+
 
 @media screen and (max-width: 600px) {
     .card {

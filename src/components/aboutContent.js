@@ -5,6 +5,7 @@ import Card from "./aboutCard"
 import CardData from "./aboutCardData"
 import profile from "../assets/profile.jpg"
 import { HiDownload } from "react-icons/hi"
+import { NavLink } from "react-router-dom"
 
 const aboutContent = () => {
     return (
@@ -20,11 +21,12 @@ const aboutContent = () => {
                     <div className="about-cards">
                         {
                             CardData.map(item => (
-                                <Card key={item.id} className="about-card" >
+                                <NavLink to={item.loc}> <Card key={item.id} className="about-card" loc={item.loc}>
                                     <span className="about-card-icon">{item.icon} </span>
                                     <h5>{item.title}</h5>
-                                    <small>{ item.desc}</small>
+                                    <small>{item.desc}</small>
                                 </Card>
+                                </NavLink>
                             ))
                         }
                     </div>
@@ -34,7 +36,7 @@ const aboutContent = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     )
 }
 
